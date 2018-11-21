@@ -31,7 +31,7 @@ bot.on('guildMemberAdd', member => {
 
 bot.on('message', message => {
 
-  if (message.content.startsWith('!play')) {
+  if (message.content.startsWith('URSS.play')) {
     // On récupère le premier channel audio du serveur
     let voiceChannel = message.guild.channels
       .filter(function (channel) { return channel.type === 'voice' })
@@ -57,18 +57,7 @@ bot.on('message', message => {
   }
 
 })
-  bot.on('message', msg => {
-      if (content.startsWith(prefix + "time")) {
-        let daysofweek = ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi" ]
-        msg.channel.send(daysofweek[(new Date ).getDay()])
-      }
-  bot.on('message', msg => {
-      if (content.startsWith(prefix + "roulette russe")) {
-        msg.channel.send("Et c'est ..." + Math.floor(Math.random() * 6 + 1)
-    if (msg.content == "Et c'est ... 6" )
-    else guildMember.kick
-    guildMember.createDM("https://discord.gg/YYgYZDn")
-  }
+  
 
 
 bot.on('message', msg => {
