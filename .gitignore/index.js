@@ -21,7 +21,7 @@ bot.on('message', message => {
 
 bot.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
-    return channel.send('Bienvenue sur le serveur Albert de Mun' + member.displayName)
+    return channel.send('Bienvenue camarade,au travail sinon c'est le goulag qui t'attends' + member.displayName)
   }).catch(console.error)
     
     
